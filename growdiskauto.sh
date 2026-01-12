@@ -11,7 +11,7 @@
 # Optional:
 #   DRYRUN=1 sudo bash grow-root.sh   # show what it would do
 set -euo pipefail
-
+sudo apt install -y parted
 DRYRUN="${DRYRUN:-0}"
 
 log()  { echo -e "[+] $*"; }
